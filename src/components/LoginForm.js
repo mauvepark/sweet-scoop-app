@@ -66,7 +66,7 @@ function LoginForm() {
             id="username"
             type="text"
             value={username}
-            placeholder="Bret"
+            placeholder="Enter Username"
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>

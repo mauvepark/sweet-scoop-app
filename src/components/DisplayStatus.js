@@ -1,11 +1,7 @@
 function DisplayStatus({ type, message }) {
-  const style = {
-    color: type === "success" ? "green" : "red",
-    fontWeight: "bold",
-    marginTop: "15px",
-  };
+  if (!message) return null;
 
-  return <div style={style}>{message}</div>;
+  return <div className={`display-status ${type}`}>{message}</div>;
 }
 
 export default DisplayStatus;
